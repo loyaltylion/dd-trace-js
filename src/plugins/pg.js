@@ -2,7 +2,7 @@
 
 const Tags = require('opentracing').Tags
 
-const OPERATION_NAME = 'pg.query'
+const OPERATION_NAME = 'postgres.query'
 
 function patch (pg, tracer, config) {
   function queryWrap (query) {
